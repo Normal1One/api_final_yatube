@@ -3,6 +3,7 @@ from rest_framework.routers import DefaultRouter
 
 from .views import FollowViewSet, PostViewSet, CommentViewSet, GroupViewSet
 
+
 router = DefaultRouter()
 router.register('posts', PostViewSet, basename='posts')
 router.register(r'posts/(?P<post_id>\d+)/comments',
