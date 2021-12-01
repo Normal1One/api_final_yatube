@@ -47,7 +47,7 @@ class FollowSerializer(serializers.ModelSerializer):
         ).exists():
             raise serializers.ValidationError(
                 'Вы уже подписаны на данного пользователя!')
-        elif user == value:
+        if user == value:
             raise serializers.ValidationError(
                 'Вы не можете подписаться на сомого себя!')
         return value
