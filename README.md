@@ -1,8 +1,8 @@
 ### Yatube API
 
-The project is an API for the Yatube site
+The project is an API for the Yatube website
 
-### Как запустить проект:
+### How to launch the project:
 
 Clone the repository and navigate to it on the command line:
 
