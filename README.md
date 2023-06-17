@@ -1,10 +1,10 @@
 ### Yatube API
 
-Проект является API для сайта Yatube
+The project is an API for the Yatube site
 
 ### Как запустить проект:
 
-Клонировать репозиторий и перейти в него в командной строке:
+Clone the repository and navigate to it on the command line:
 
 ```
 git clone https://github.com/Normal1One/api_final_yatube.git
@@ -14,34 +14,38 @@ git clone https://github.com/Normal1One/api_final_yatube.git
 cd api_final_yatube
 ```
 
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment:
 
 ```
-python -m venv venv
+python -m venv .venv
 ```
 
 ```
-source venv/Scripts/activate
+source ./.venv/Scripts/activate
 ```
 
-Установить зависимости из файла requirements.txt:
+Install dependencies from the requirements.txt file and navigate to the API folder:
 
 ```
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+```
+cd yatube_api
+```
+
+Perform migrations:
 
 ```
 python manage.py migrate
 ```
 
-Запустить проект:
+Run the project:
 
 ```
 python manage.py runserver
 ```
 
-### Как пользоваться проектом:
+### How to use the project:
 
-Вся документация есть в http://127.0.0.1:8000/redoc/ (доступно после запуска проекта)
+All documentation is available at http://127.0.0.1:8000/redoc/ (available after the project is launched)
